@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgba(255, 102, 0, 0.877);
+}
+
+body {
+    background-image: URL('/img/bg-vinyl.jpg');
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-dark {
+    background-color:#212529d1!important;
+}
+
+.title {
+    color: #fff;
+    background-color: #17071491;
+    padding: 20px;
+    border-radius: 60px;
+    margin: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: rgba(255, 102, 0, 0.877);
+    color: #FFF;
+  }
+
+.logo{
+    width: 80%;
+    height: 80%;
+    margin: 10px 0 0 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+/* Bulle 1 */ 
+
+.bulle{   
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  background-color: rgba(255, 102, 0, 0.877);
+  border-top-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 20px; 
+  border: #ffffff solid 10px;
+  animation-name: bulle;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-fill-mode:backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;   
+  position: relative;
+}
+
+.bulle:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid transparent;
+  left: 30px;
+  top:120px;
+}
+
+@keyframes bulle {
+  0%   {
+      opacity : 1 ;
+      top: -10px;
+  }
+  100% {
+      opacity : 1 ;
+      top: 0px;
+  }
+}
+
+h2 {
+  color: #ff6400;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.table .thead-dark th {  
+  color: #fff;
+  background-color: #ff6400;
+  border-color: #32383e;
+}
+
+.table .thead-dark tr th, table tbody tr td {
+  text-align: center;
+}
+
+.top-20{
+  margin-top:20px;
+}
+
+.top-200{
+  margin-top: 200px;
+  }
+
+.top-360{
+margin-top: 360px;
+}
